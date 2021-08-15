@@ -60,7 +60,7 @@ def main():
     salir = False;
     datos = []
     varianza = 0;
-    while not salir:
+    while not salir
         opcion = -1
         menu()
         opcion = input()
