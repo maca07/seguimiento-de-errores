@@ -31,7 +31,7 @@ def obtenerPromedio(lista):
 def desviacionEstandar(lista):
     n = len(lista)
     #promedio = obtenerPromedio(datos)
-    promedio = obtenerPromedio(sumatoria)
+    promedio = obtenerPromedio(lista)
     varianza = 0
     for dato in lista:
         varianza += math.pow((dato - promedio), 2)
@@ -57,21 +57,21 @@ def obtenerDesviacion(varianza, lista):
     #print("El Promedio de la lista 'datos3' es: ", promedio)
 
 def main():
-    salir = False;
+    salir = False
     datos = []
-    varianza = 0;
-    while not salir
+    varianza = 0
+    while not salir:
         opcion = -1
         menu()
         opcion = input()
-        if(opcion == '4'):
+        if(opcion == '1'):
             print ("ingresa el numero de datos en la lista")
             numero = input()
             agregardatos(numero)
             promedio = obtenerPromedio(datos1)
             print("El Promedio de la lista 'datos4' es: ", promedio)
             desviacion = obtenerDesviacion(varianza, datos1)
-             print("El valor de Desviacion estandar en la lista 'datos1' es: ", desviacion)
+            print("El valor de Desviacion estandar en la lista 'datos1' es: ", desviacion)
             input("Enter para continuar...")
 
         elif(opcion == '2'):
